@@ -25,6 +25,7 @@ SECRET_KEY = "django-insecure-l^pjr6z!!j*=vtmjet#&3@1v*e--i7llk0e&zbn(1ngwt0+uq7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
 
 
@@ -75,9 +76,13 @@ WSGI_APPLICATION = "otp.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'otp',
+        'USER': 'sabari',
+        'PASSWORD': 'stv@1212',
+        # 'HOST': '127.0.0.1',
+        # 'PORT': '5432',
     }
 }
 
@@ -117,5 +122,5 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 ACCOUNT_SID='AC8e1ea815fdf449ed3ce99238c3249268'
-AUTH_TOKEN='b312af810c7dbd10ce1b4369bc870960'
+AUTH_TOKEN='df5d6f95b8a0cbcb241431443677eea1'
 COUNTRY_CODE='+91'

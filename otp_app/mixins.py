@@ -15,7 +15,7 @@ class MessaHandler:
         client = Client(settings.ACCOUNT_SID, settings.AUTH_TOKEN)
 
         message = client.messages.create(
-            body='Hi your otp is{self.otp}',
+            body=f'Hi greetings from futura labs your otp is ####  {self.otp}   ',
             from_='+13087304369',
 
             # to='self.phone_number'
